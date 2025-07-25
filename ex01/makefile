@@ -6,8 +6,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC_PATH := src/
 
-SRC = phonebook.cpp \
-		contact.cpp \
+SRC = PhoneBook.cpp \
+		Contact.cpp \
 		main.cpp
 
 SRCS  := $(SRC_PATH)$(SRC)
