@@ -6,7 +6,7 @@
 /*   By: llupache <llupache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 21:25:07 by danslav1e         #+#    #+#             */
-/*   Updated: 2026/02/15 16:07:05 by llupache         ###   ########.fr       */
+/*   Updated: 2026/02/15 16:14:28 by llupache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ void PhoneBook::printContact( void ) {
         return;
     }
     
+    std::cin.ignore( std::numeric_limits<std::streamsize>::max(), '\n' );
+
     if ( input < 1 || input > this->contactsCount ) {
         std::cout << "Wrong index!" << std::endl;
         return;
