@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danslav1e <danslav1e@student.42.fr>        +#+  +:+       +#+        */
+/*   By: llupache <llupache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:45:36 by danslav1e         #+#    #+#             */
-/*   Updated: 2025/07/25 22:32:37 by danslav1e        ###   ########.fr       */
+/*   Updated: 2026/02/15 16:08:51 by llupache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ void create_contact(PhoneBook &pb)
 int main(void)
 {
     std::string input;
-    int inp;
     PhoneBook pb;
 
     while ( true ) {
@@ -77,8 +76,7 @@ int main(void)
             if ( pb.contactsCount > 0 ) {
                 pb.printContacts();
                 std::cout << "Write contact index" << std::endl;
-                std::cin >> inp;
-                pb.printContact( inp );
+                pb.printContact();
             } else {
                 std::cout << "There is no contacts in the phonebook yet" << std::endl;
             }

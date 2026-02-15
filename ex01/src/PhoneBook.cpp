@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danslav1e <danslav1e@student.42.fr>        +#+  +:+       +#+        */
+/*   By: llupache <llupache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 21:25:07 by danslav1e         #+#    #+#             */
-/*   Updated: 2025/07/25 22:31:30 by danslav1e        ###   ########.fr       */
+/*   Updated: 2026/02/15 16:07:05 by llupache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,9 @@ void PhoneBook::printColumn( const std::string &text ) {
     }
 }
 
-void PhoneBook::printContact( int input ) {
+void PhoneBook::printContact( void ) {
+    int input;
+    
     if ( !( std::cin >> input ) ) {
         std::cout << "That was not a number!" << std::endl;
         std::cin.clear();

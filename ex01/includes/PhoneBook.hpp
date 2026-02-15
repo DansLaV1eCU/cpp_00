@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danslav1e <danslav1e@student.42.fr>        +#+  +:+       +#+        */
+/*   By: llupache <llupache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:33:33 by danslav1e         #+#    #+#             */
-/*   Updated: 2025/07/25 22:31:38 by danslav1e        ###   ########.fr       */
+/*   Updated: 2026/02/15 16:06:29 by llupache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class PhoneBook
 
         void addContact( const Contact &pcontact );
         void printContacts( void );
-        void printContact(int input );
+        void printContact( void );
         void printColumn( const std::string &text );
 };
 
